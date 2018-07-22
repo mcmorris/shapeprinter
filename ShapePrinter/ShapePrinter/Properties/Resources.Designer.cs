@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ShapePrinter.Properties {
+namespace ShapePrinterApp.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace ShapePrinter.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ShapePrinter.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ShapePrinterApp.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,51 @@ namespace ShapePrinter.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please specify the height of the shape to print (Q to quit):.
+        /// </summary>
+        internal static string HeightInputPrompt {
+            get {
+                return ResourceManager.GetString("HeightInputPrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Height must be a whole number greater than 0..
+        /// </summary>
+        internal static string InvalidHeightMessage {
+            get {
+                return ResourceManager.GetString("InvalidHeightMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Input and output streams were not accessible..
+        /// </summary>
+        internal static string IOExceptionMessage {
+            get {
+                return ResourceManager.GetString("IOExceptionMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The rest of this shape is too large to display properly..
+        /// </summary>
+        internal static string ShapeTruncatedMessage {
+            get {
+                return ResourceManager.GetString("ShapeTruncatedMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorry, an error has occurred.  The program will now exit..
+        /// </summary>
+        internal static string UnhandledExceptionMessage {
+            get {
+                return ResourceManager.GetString("UnhandledExceptionMessage", resourceCulture);
             }
         }
     }

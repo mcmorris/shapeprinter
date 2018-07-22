@@ -3,11 +3,13 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <StartupObject>ShapePrinter.Program</StartupObject>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <StartupObject>ShapePrinterApp.Program</StartupObject>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>ShapePrinterKey.snk</AssemblyOriginatorKeyFile>
     <NeutralLanguage>en-CA</NeutralLanguage>
+    <AssemblyName>ShapePrinterApp</AssemblyName>
+    <RootNamespace>ShapePrinterApp</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

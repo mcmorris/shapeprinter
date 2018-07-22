@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Text;
+﻿using System.Text;
 
-namespace ShapePrinter.Templates
+namespace ShapePrinterApp.Templates
 {
     public interface IShapeTemplate
     {
-        Rectangle Boundaries { get; }
+        Rectangle Boundaries { get; set; }
 
-        string Print();
-        int GetWidth(int height);
+        string Print(int height);
+        void PrintLine(StringBuilder printBuilder, int lineNumber);
     }
 }
