@@ -32,35 +32,35 @@ namespace PrinterUserTests
 
                     // Point is to test algorithm, so avoid using another algorithm to test with.
                     var shape = shapeTemplate.Print(1);
-                    String checkString = "                              *\n";
+                    String checkString = " *\n";
 
                     Assert.AreEqual(shape, checkString);
 
                     shape = shapeTemplate.Print(2);
-                    checkString  = "                              *\n";
-                    checkString += "                             ***\n";
+                    checkString  = "  *\n";
+                    checkString += " ***\n";
 
                     Assert.AreEqual(shape, checkString);
 
                     shape = shapeTemplate.Print(5);
-                    checkString  = "                              *\n";
-                    checkString += "                             ***\n";
-                    checkString += "                            *****\n";
-                    checkString += "                           *******\n";
-                    checkString += "                          *********\n";
+                    checkString  = "     *\n";
+                    checkString += "    ***\n";
+                    checkString += "   *****\n";
+                    checkString += "  *******\n";
+                    checkString += " *********\n";
                     Assert.AreEqual(shape, checkString);
 
                     shape = shapeTemplate.Print(10);
-                    checkString  = "                              *\n";
-                    checkString += "                             ***\n";
-                    checkString += "                            *****\n";
-                    checkString += "                           *******\n";
-                    checkString += "                          *********\n";
-                    checkString += "                         ***********\n";
-                    checkString += "                        *************\n";
-                    checkString += "                       ***************\n";
-                    checkString += "                      *****************\n";
-                    checkString += "                     *******************\n";
+                    checkString  = "          *\n";
+                    checkString += "         ***\n";
+                    checkString += "        *****\n";
+                    checkString += "       *******\n";
+                    checkString += "      *********\n";
+                    checkString += "     ***********\n";
+                    checkString += "    *************\n";
+                    checkString += "   ***************\n";
+                    checkString += "  *****************\n";
+                    checkString += " *******************\n";
                     Assert.AreEqual(shape, checkString);
 
                     // Check the truncation message is displayed.

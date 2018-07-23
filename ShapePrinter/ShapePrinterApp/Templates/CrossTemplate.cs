@@ -19,8 +19,7 @@ namespace ShapePrinterApp.Templates
             {
                 if (DoesShapeFit(Boundaries.Y + i) == true)
                 {
-                    PrintLine(printBuilder, i, height);
-                    printBuilder.Append("\n");
+                    PrintLine(printBuilder, i, height);             
                 }
                 else
                 {
@@ -46,6 +45,7 @@ namespace ShapePrinterApp.Templates
                 }
             }
 
+            printBuilder.Append("\n");
         }
     }
 }

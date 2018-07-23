@@ -33,7 +33,7 @@ namespace ShapePrinterApp.Templates
 
         public override void PrintLine(StringBuilder printBuilder, int lineNumber, int height = 0)
         {
-            for (int j = Boundaries.Height - lineNumber; j > 0; j--)
+            for (int j = height - lineNumber; j > 0; j--)
             {
                 printBuilder.Append(" ");
             }
