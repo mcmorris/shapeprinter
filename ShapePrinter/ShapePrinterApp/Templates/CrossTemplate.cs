@@ -5,8 +5,8 @@ namespace ShapePrinterApp.Templates
 {
     public class CrossTemplate : ShapeTemplate, IShapeTemplate
     {
-        public CrossTemplate(char patternChar, Rectangle boundaries)
-            : base(patternChar, boundaries)
+        public CrossTemplate(char patternCharacter, Rectangle boundaries)
+            : base(patternCharacter, boundaries)
         {
 
         }
@@ -19,7 +19,8 @@ namespace ShapePrinterApp.Templates
             {
                 if (DoesShapeFit(Boundaries.Y + i) == true)
                 {
-                    PrintLine(printBuilder, i);
+                    PrintLine(printBuilder, i, height);
+                    printBuilder.Append("\n");
                 }
                 else
                 {
@@ -31,9 +32,20 @@ namespace ShapePrinterApp.Templates
             return printBuilder.ToString();
         }
 
-        public override void PrintLine(StringBuilder printBuilder, int lineNumber)
+        public override void PrintLine(StringBuilder printBuilder, int lineNumber, int height=0)
         {
-            
+            for (int j = 0; j < height; j++)
+            {
+                if (lineNumber == j || j == (height - lineNumber - 1))
+                {
+                    printBuilder.Append("*");
+                }
+                else
+                {
+                    printBuilder.Append(" ");
+                }
+            }
+
         }
     }
 }

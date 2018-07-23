@@ -7,6 +7,6 @@ namespace ShapePrinterApp.Templates
         Rectangle Boundaries { get; set; }
 
         string Print(int height);
-        void PrintLine(StringBuilder printBuilder, int lineNumber);
+        void PrintLine(StringBuilder printBuilder, int lineNumber, int height = 0);
     }
 }
